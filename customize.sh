@@ -48,10 +48,12 @@ unpack_slot() {
 # resolve APK for BOOTSIGNER functionality
 [ "$BOOTSIGNER" ] && find_magisk_apk
 
-# we need RECOVERYMODE resolved for find_boot_image()
+# we need RECOVERYMODE and VENDORBOOT resolved for find_boot_image()
 getvar RECOVERYMODE
+getvar VENDORBOOT
 find_block recovery$SLOT >/dev/null 2>&1 && RECOVERYMODE=true
 [ -z $RECOVERYMODE ] && RECOVERYMODE=false
+[ -z $VENDORBOOT ] && VENDORBOOT=false
 
 # copy over module files to allow future runs
 [ -z $TMPDIR ] && TMPDIR=/dev/tmp
