@@ -1,6 +1,6 @@
 {
     "version": "Magisk",
     "versionCode": "2",
-    "zipUrl": "https://xdaforums.com/attachments/twrp_a_b_retention_script-magisk-1-zip.6292186/",
+    "zipUrl": "https://github.com/Magisk-Modules-Repo/twrp-keep/releases/download/20260808/TWRP_A_B_Retention_Script-Magisk-1.zip",
     "changelog": "https://raw.githubusercontent.com/Magisk-Modules-Repo/twrp-keep/master/README.md"
 }
